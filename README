@@ -1,0 +1,31 @@
+Amazon EC2 Backup tool - SAMBS
+
+1. Installation
+
+TODO: installer
+
+Install ec2 tools.
+Copy all files to /root/SAMBS or other. 
+Configure your SAMBS installation.
+
+Add to crontab these lines:
+"
+0 */4 * * * $SAMBS/main.sh hourly
+0   6 * * * $SAMBS/main.sh daily
+0   3 * * 1 $SAMBS/main.sh weekly 
+30  1 1 * * $SAMBS/main.sh monthly
+"
+Enjoy! :)
+
+2. Configuration
+
+Add ids of instances and volumes to config files in conf directory. Each line of config must contain id and name.
+
+Add location of your amazon key files to bin/main.sh.
+
+TODO: main config file
+
+
+
+
+
