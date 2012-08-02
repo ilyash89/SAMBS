@@ -1,5 +1,5 @@
-0 */4 * * * $SAMBS/main.sh hourly
-0   6 * * * $SAMBS/main.sh daily
-0   3 * * 1 $SAMBS/main.sh weekly 
-30  1 1 * * $SAMBS/main.sh monthly
+0 */4 * * * $SAMBS/main-cron.sh hourly
+0   6 * * * $SAMBS/main-cron.sh daily
+0   3 * * 1 $SAMBS/main-cron.sh weekly 
+30  1 1 * * $SAMBS/main-cron.sh monthly
 
