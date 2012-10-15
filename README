@@ -23,8 +23,6 @@ Add ids of instances and volumes to config files in conf directory. Each line of
 
 Add location of your amazon key files to bin/main.sh.
 
-Fix region name (by default 'eu-west-1').
-TODO: region config
 TODO: main config file
 
 
