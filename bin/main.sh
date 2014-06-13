@@ -104,7 +104,6 @@ function ifmore {
 
 function create_snapshot {
 	tmp=$($ec2crsn $1 -d SAMBS_$3_$1_$2_$(get_date) --region $region)
-	#tmp=$(echo "SNAPSHOT        snap-aea11fc6   vol-e449688d    pending 2011-11-08T11:03:30+0000                785370008234    100     video.condenast.ru_backup")
 	echo $tmp | awk '{print $2}'
 }
 
@@ -115,7 +114,6 @@ function delete_snapshot {
 
 function create_image {
 	tmp=$($ec2crim $1 -n $3_$1_$2_$(get_img_date) -d SAMBS_$3_$1_$2_$(get_date) --no-reboot --region $region)
-	#tmp=$(echo "IMAGE   ami-d1eed2a5")
         echo $tmp | awk '{print $2}'
 }
 
